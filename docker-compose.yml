@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:80"
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # Allows access to host's Ollama
